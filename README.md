@@ -25,14 +25,21 @@ Clone the repository
 git clone https://github.com/hrshrayank/zania-assessment-frontend
 ```
 
-## Usage
+- ### Directly Installing
 
 ```javascript
 npm i
 npm run dev
 ```
+(OR)
 
-## Usage
+- ### Using Docker Compose
+
+```docker
+docker-compose up --build
+```
+
+## Functional Usage
 
 ### 1. Reordering Documents:
 
