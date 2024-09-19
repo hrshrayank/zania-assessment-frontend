@@ -2,11 +2,17 @@
 
 This project is a React-Typescript based document viewer that allows users to drag-and-drop documents to reorder them, and click on a document to display it as an overlay. The overlay can be closed by pressing the ESC key. The application also periodically saves document data every 5 seconds, ensuring that no changes are lost.
 
-- [1. Features](#1-features)
+## Table of Contents
+
+### [1. Features](#features)
+### [2. Installation](#installation)
+### [3. Functional Usage](#functional-usage)
+### [4. Features Explanation](#features-explanation)
+### [5. Design the hypothetical API](#design-the-hypothetical-api)
 
 ---
 
-## 1. Features
+## Features
 
 ### 1. Drag-and-Drop Support:
 
