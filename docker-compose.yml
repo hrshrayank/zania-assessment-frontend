@@ -1,0 +1,10 @@
+version: "3"
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80" # Expose the frontend app on port 3000
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
