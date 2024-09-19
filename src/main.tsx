@@ -3,16 +3,14 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
+// Enable mocking in both development and production environments
 async function enableMocking() {
-  if (process.env.NODE_ENV !== "development") {
-    return;
-  }
-
   const { worker } = await import("./mocks/browser");
 
-  // `worker.start()` returns a Promise that resolves
-  // once the Service Worker is up and ready to intercept requests.
-  return worker.start();
+  // Start the Service Worker to intercept requests in both development and production
+  return worker.start({
+    onUnhandledRequest: "bypass", // Allow real API requests when no mock is defined
+  });
 }
 
 enableMocking().then(() => {
